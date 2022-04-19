@@ -1,0 +1,722 @@
+<html>
+    <head>
+        <title>DV_Dashboard</title>
+    </head>
+    <style>
+    #columnchart_values{
+        position: absolute;
+        top: 1%;
+        left: 25%;
+    }
+    
+    #chart_div1{
+        position: absolute;
+        top: 1%;
+        left: 25%;
+    }
+
+    #barchart_values{
+        position: absolute;
+        top: 1%;
+        left: 25%;
+    }
+
+    #chart_div3{
+        position: absolute;
+        top: 1%;
+        left: 25%;
+    }
+
+    #donutchart{
+        position: absolute;
+        top: 1%;
+        left: 25%;
+    }
+
+    #regions_div{
+        position: absolute;
+        top: 1%;
+        left: 25%;
+    }
+    
+    #curve_chart{
+        position: absolute;
+        top: 1%;
+        left: 25%;
+    }
+
+    #piechart{
+        position: absolute;
+        top: 1%;
+        left: 25%;
+    }
+
+    #chart_div5{
+        position: absolute;
+        top: 1%;
+        left: 25%;
+    }
+
+    #wordtree_basic{
+        position: absolute;
+        top: 1%;
+        left: 25%;
+    }
+    button{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        background-color: blueviolet;
+        border: none;
+        width: 340px;
+        height: 90px;
+        color: white;
+        font-size: 0.6cm;
+    }
+     
+    </style>
+    <script>
+        function fun1(){
+        document.getElementById("but1").style.color="black";
+        document.getElementById("but1").style.backgroundColor="rgba(71, 69, 197, 0.596)";
+        document.getElementById("but2").style.color="white";
+        document.getElementById("but2").style.backgroundColor="blueviolet";
+        document.getElementById("but3").style.color="white";
+        document.getElementById("but3").style.backgroundColor="blueviolet";
+        document.getElementById("but4").style.color="white";
+        document.getElementById("but4").style.backgroundColor="blueviolet";
+        document.getElementById("but5").style.color="white";
+        document.getElementById("but5").style.backgroundColor="blueviolet";
+        document.getElementById("but6").style.color="white";
+        document.getElementById("but6").style.backgroundColor="blueviolet";
+        document.getElementById("but7").style.color="white";
+        document.getElementById("but7").style.backgroundColor="blueviolet";
+        document.getElementById("but8").style.color="white";
+        document.getElementById("but8").style.backgroundColor="blueviolet";
+        document.getElementById("but9").style.color="white";
+        document.getElementById("but9").style.backgroundColor="blueviolet";
+        document.getElementById("but10").style.color="white";
+        document.getElementById("but10").style.backgroundColor="blueviolet";
+
+           document.getElementById("columnchart_values").style.visibility="visible";
+           document.getElementById("chart_div1").style.visibility="hidden";
+           document.getElementById("barchart_values").style.visibility="hidden";
+           document.getElementById("chart_div3").style.visibility="hidden";
+           document.getElementById("donutchart").style.visibility="hidden";
+           document.getElementById("regions_div").style.visibility="hidden";
+           document.getElementById("curve_chart").style.visibility="hidden";
+           document.getElementById("piechart").style.visibility="hidden";
+           document.getElementById("chart_div5").style.visibility="hidden";
+           document.getElementById("wordtree_basic").style.visibility="hidden";
+        }
+        function fun2(){  
+            document.getElementById("but2").style.color="black";
+        document.getElementById("but2").style.backgroundColor="rgba(71, 69, 197, 0.596)";
+        document.getElementById("but1").style.color="white";
+        document.getElementById("but1").style.backgroundColor="blueviolet";
+        document.getElementById("but3").style.color="white";
+        document.getElementById("but3").style.backgroundColor="blueviolet";
+        document.getElementById("but4").style.color="white";
+        document.getElementById("but4").style.backgroundColor="blueviolet";
+        document.getElementById("but5").style.color="white";
+        document.getElementById("but5").style.backgroundColor="blueviolet";
+        document.getElementById("but6").style.color="white";
+        document.getElementById("but6").style.backgroundColor="blueviolet";
+        document.getElementById("but7").style.color="white";
+        document.getElementById("but7").style.backgroundColor="blueviolet";
+        document.getElementById("but8").style.color="white";
+        document.getElementById("but8").style.backgroundColor="blueviolet";
+        document.getElementById("but9").style.color="white";
+        document.getElementById("but9").style.backgroundColor="blueviolet";
+        document.getElementById("but10").style.color="white";
+        document.getElementById("but10").style.backgroundColor="blueviolet";    
+           document.getElementById("columnchart_values").style.visibility="hidden";
+           document.getElementById("chart_div1").style.visibility="visible";
+           document.getElementById("barchart_values").style.visibility="hidden";
+           document.getElementById("chart_div3").style.visibility="hidden";
+           document.getElementById("donutchart").style.visibility="hidden";
+           document.getElementById("regions_div").style.visibility="hidden";
+           document.getElementById("curve_chart").style.visibility="hidden";
+           document.getElementById("piechart").style.visibility="hidden";
+           document.getElementById("chart_div5").style.visibility="hidden";
+           document.getElementById("wordtree_basic").style.visibility="hidden";
+        }
+        function fun3(){   
+            document.getElementById("but3").style.color="black";
+        document.getElementById("but3").style.backgroundColor="rgba(71, 69, 197, 0.596)";
+        document.getElementById("but2").style.color="white";
+        document.getElementById("but2").style.backgroundColor="blueviolet";
+        document.getElementById("but1").style.color="white";
+        document.getElementById("but1").style.backgroundColor="blueviolet";
+        document.getElementById("but4").style.color="white";
+        document.getElementById("but4").style.backgroundColor="blueviolet";
+        document.getElementById("but5").style.color="white";
+        document.getElementById("but5").style.backgroundColor="blueviolet";
+        document.getElementById("but6").style.color="white";
+        document.getElementById("but6").style.backgroundColor="blueviolet";
+        document.getElementById("but7").style.color="white";
+        document.getElementById("but7").style.backgroundColor="blueviolet";
+        document.getElementById("but8").style.color="white";
+        document.getElementById("but8").style.backgroundColor="blueviolet";
+        document.getElementById("but9").style.color="white";
+        document.getElementById("but9").style.backgroundColor="blueviolet";
+        document.getElementById("but10").style.color="white";
+        document.getElementById("but10").style.backgroundColor="blueviolet";   
+            document.getElementById("columnchart_values").style.visibility="hidden";
+           document.getElementById("chart_div1").style.visibility="hidden";
+           document.getElementById("barchart_values").style.visibility="visible";
+           document.getElementById("chart_div3").style.visibility="hidden";
+           document.getElementById("donutchart").style.visibility="hidden";
+           document.getElementById("regions_div").style.visibility="hidden";
+           document.getElementById("curve_chart").style.visibility="hidden";
+           document.getElementById("piechart").style.visibility="hidden";
+           document.getElementById("chart_div5").style.visibility="hidden";
+           document.getElementById("wordtree_basic").style.visibility="hidden";
+        }
+        function fun4(){     
+            document.getElementById("but4").style.color="black";
+        document.getElementById("but4").style.backgroundColor="rgba(71, 69, 197, 0.596)";
+        document.getElementById("but2").style.color="white";
+        document.getElementById("but2").style.backgroundColor="blueviolet";
+        document.getElementById("but3").style.color="white";
+        document.getElementById("but3").style.backgroundColor="blueviolet";
+        document.getElementById("but1").style.color="white";
+        document.getElementById("but1").style.backgroundColor="blueviolet";
+        document.getElementById("but5").style.color="white";
+        document.getElementById("but5").style.backgroundColor="blueviolet";
+        document.getElementById("but6").style.color="white";
+        document.getElementById("but6").style.backgroundColor="blueviolet";
+        document.getElementById("but7").style.color="white";
+        document.getElementById("but7").style.backgroundColor="blueviolet";
+        document.getElementById("but8").style.color="white";
+        document.getElementById("but8").style.backgroundColor="blueviolet";
+        document.getElementById("but9").style.color="white";
+        document.getElementById("but9").style.backgroundColor="blueviolet";
+        document.getElementById("but10").style.color="white";
+        document.getElementById("but10").style.backgroundColor="blueviolet"; 
+            document.getElementById("columnchart_values").style.visibility="hidden";
+           document.getElementById("chart_div1").style.visibility="hidden";
+           document.getElementById("barchart_values").style.visibility="hidden";
+           document.getElementById("chart_div3").style.visibility="visible";
+           document.getElementById("donutchart").style.visibility="hidden";
+           document.getElementById("regions_div").style.visibility="hidden";
+           document.getElementById("curve_chart").style.visibility="hidden";
+           document.getElementById("piechart").style.visibility="hidden";
+           document.getElementById("chart_div5").style.visibility="hidden";
+           document.getElementById("wordtree_basic").style.visibility="hidden";
+        }
+        function fun5(){      
+            document.getElementById("but5").style.color="black";
+        document.getElementById("but5").style.backgroundColor="rgba(71, 69, 197, 0.596)";
+        document.getElementById("but2").style.color="white";
+        document.getElementById("but2").style.backgroundColor="blueviolet";
+        document.getElementById("but3").style.color="white";
+        document.getElementById("but3").style.backgroundColor="blueviolet";
+        document.getElementById("but4").style.color="white";
+        document.getElementById("but4").style.backgroundColor="blueviolet";
+        document.getElementById("but1").style.color="white";
+        document.getElementById("but1").style.backgroundColor="blueviolet";
+        document.getElementById("but6").style.color="white";
+        document.getElementById("but6").style.backgroundColor="blueviolet";
+        document.getElementById("but7").style.color="white";
+        document.getElementById("but7").style.backgroundColor="blueviolet";
+        document.getElementById("but8").style.color="white";
+        document.getElementById("but8").style.backgroundColor="blueviolet";
+        document.getElementById("but9").style.color="white";
+        document.getElementById("but9").style.backgroundColor="blueviolet";
+        document.getElementById("but10").style.color="white";
+        document.getElementById("but10").style.backgroundColor="blueviolet";
+            document.getElementById("columnchart_values").style.visibility="hidden";
+           document.getElementById("chart_div1").style.visibility="hidden";
+           document.getElementById("barchart_values").style.visibility="hidden";
+           document.getElementById("chart_div3").style.visibility="hidden";
+           document.getElementById("donutchart").style.visibility="visible";
+           document.getElementById("regions_div").style.visibility="hidden";
+           document.getElementById("curve_chart").style.visibility="hidden";
+           document.getElementById("piechart").style.visibility="hidden";
+           document.getElementById("chart_div5").style.visibility="hidden";
+           document.getElementById("wordtree_basic").style.visibility="hidden";
+        }
+        function fun6(){      
+            document.getElementById("but6").style.color="black";
+        document.getElementById("but6").style.backgroundColor="rgba(71, 69, 197, 0.596)";
+        document.getElementById("but2").style.color="white";
+        document.getElementById("but2").style.backgroundColor="blueviolet";
+        document.getElementById("but3").style.color="white";
+        document.getElementById("but3").style.backgroundColor="blueviolet";
+        document.getElementById("but4").style.color="white";
+        document.getElementById("but4").style.backgroundColor="blueviolet";
+        document.getElementById("but5").style.color="white";
+        document.getElementById("but5").style.backgroundColor="blueviolet";
+        document.getElementById("but1").style.color="white";
+        document.getElementById("but1").style.backgroundColor="blueviolet";
+        document.getElementById("but7").style.color="white";
+        document.getElementById("but7").style.backgroundColor="blueviolet";
+        document.getElementById("but8").style.color="white";
+        document.getElementById("but8").style.backgroundColor="blueviolet";
+        document.getElementById("but9").style.color="white";
+        document.getElementById("but9").style.backgroundColor="blueviolet";
+        document.getElementById("but10").style.color="white";
+        document.getElementById("but10").style.backgroundColor="blueviolet";
+            document.getElementById("columnchart_values").style.visibility="hidden";
+           document.getElementById("chart_div1").style.visibility="hidden";
+           document.getElementById("barchart_values").style.visibility="hidden";
+           document.getElementById("chart_div3").style.visibility="hidden";
+           document.getElementById("donutchart").style.visibility="hidden";
+           document.getElementById("regions_div").style.visibility="visible";
+           document.getElementById("curve_chart").style.visibility="hidden";
+           document.getElementById("piechart").style.visibility="hidden";
+           document.getElementById("chart_div5").style.visibility="hidden";
+           document.getElementById("wordtree_basic").style.visibility="hidden";
+        }
+        function fun7(){      
+            document.getElementById("but7").style.color="black";
+        document.getElementById("but7").style.backgroundColor="rgba(71, 69, 197, 0.596)";
+        document.getElementById("but2").style.color="white";
+        document.getElementById("but2").style.backgroundColor="blueviolet";
+        document.getElementById("but3").style.color="white";
+        document.getElementById("but3").style.backgroundColor="blueviolet";
+        document.getElementById("but4").style.color="white";
+        document.getElementById("but4").style.backgroundColor="blueviolet";
+        document.getElementById("but5").style.color="white";
+        document.getElementById("but5").style.backgroundColor="blueviolet";
+        document.getElementById("but6").style.color="white";
+        document.getElementById("but6").style.backgroundColor="blueviolet";
+        document.getElementById("but1").style.color="white";
+        document.getElementById("but1").style.backgroundColor="blueviolet";
+        document.getElementById("but8").style.color="white";
+        document.getElementById("but8").style.backgroundColor="blueviolet";
+        document.getElementById("but9").style.color="white";
+        document.getElementById("but9").style.backgroundColor="blueviolet";
+        document.getElementById("but10").style.color="white";
+        document.getElementById("but10").style.backgroundColor="blueviolet";
+            document.getElementById("columnchart_values").style.visibility="hidden";
+           document.getElementById("chart_div1").style.visibility="hidden";
+           document.getElementById("barchart_values").style.visibility="hidden";
+           document.getElementById("chart_div3").style.visibility="hidden";
+           document.getElementById("donutchart").style.visibility="hidden";
+           document.getElementById("regions_div").style.visibility="hidden";
+           document.getElementById("curve_chart").style.visibility="visible";
+           document.getElementById("piechart").style.visibility="hidden";
+           document.getElementById("chart_div5").style.visibility="hidden";
+           document.getElementById("wordtree_basic").style.visibility="hidden";
+        }
+        function fun8(){     
+            document.getElementById("but8").style.color="black";
+        document.getElementById("but8").style.backgroundColor="rgba(71, 69, 197, 0.596)";
+        document.getElementById("but2").style.color="white";
+        document.getElementById("but2").style.backgroundColor="blueviolet";
+        document.getElementById("but3").style.color="white";
+        document.getElementById("but3").style.backgroundColor="blueviolet";
+        document.getElementById("but4").style.color="white";
+        document.getElementById("but4").style.backgroundColor="blueviolet";
+        document.getElementById("but5").style.color="white";
+        document.getElementById("but5").style.backgroundColor="blueviolet";
+        document.getElementById("but6").style.color="white";
+        document.getElementById("but6").style.backgroundColor="blueviolet";
+        document.getElementById("but7").style.color="white";
+        document.getElementById("but7").style.backgroundColor="blueviolet";
+        document.getElementById("but1").style.color="white";
+        document.getElementById("but1").style.backgroundColor="blueviolet";
+        document.getElementById("but9").style.color="white";
+        document.getElementById("but9").style.backgroundColor="blueviolet";
+        document.getElementById("but10").style.color="white";
+        document.getElementById("but10").style.backgroundColor="blueviolet"; 
+           document.getElementById("columnchart_values").style.visibility="visible";
+           document.getElementById("chart_div1").style.visibility="hidden";
+           document.getElementById("barchart_values").style.visibility="hidden";
+           document.getElementById("chart_div3").style.visibility="hidden";
+           document.getElementById("donutchart").style.visibility="hidden";
+           document.getElementById("regions_div").style.visibility="hidden";
+           document.getElementById("curve_chart").style.visibility="hidden";
+           document.getElementById("piechart").style.visibility="visible";
+           document.getElementById("chart_div5").style.visibility="hidden";
+           document.getElementById("wordtree_basic").style.visibility="hidden";
+        }
+        function fun9(){    
+            document.getElementById("but9").style.color="black";
+        document.getElementById("but9").style.backgroundColor="rgba(71, 69, 197, 0.596)";
+        document.getElementById("but2").style.color="white";
+        document.getElementById("but2").style.backgroundColor="blueviolet";
+        document.getElementById("but3").style.color="white";
+        document.getElementById("but3").style.backgroundColor="blueviolet";
+        document.getElementById("but4").style.color="white";
+        document.getElementById("but4").style.backgroundColor="blueviolet";
+        document.getElementById("but5").style.color="white";
+        document.getElementById("but5").style.backgroundColor="blueviolet";
+        document.getElementById("but6").style.color="white";
+        document.getElementById("but6").style.backgroundColor="blueviolet";
+        document.getElementById("but7").style.color="white";
+        document.getElementById("but7").style.backgroundColor="blueviolet";
+        document.getElementById("but8").style.color="white";
+        document.getElementById("but8").style.backgroundColor="blueviolet";
+        document.getElementById("but1").style.color="white";
+        document.getElementById("but1").style.backgroundColor="blueviolet";
+        document.getElementById("but10").style.color="white";
+        document.getElementById("but10").style.backgroundColor="blueviolet";  
+            document.getElementById("columnchart_values").style.visibility="visible";
+           document.getElementById("chart_div1").style.visibility="hidden";
+           document.getElementById("barchart_values").style.visibility="hidden";
+           document.getElementById("chart_div3").style.visibility="hidden";
+           document.getElementById("donutchart").style.visibility="hidden";
+           document.getElementById("regions_div").style.visibility="hidden";
+           document.getElementById("curve_chart").style.visibility="hidden";
+           document.getElementById("piechart").style.visibility="hidden";
+           document.getElementById("chart_div5").style.visibility="visible";
+           document.getElementById("wordtree_basic").style.visibility="hidden";
+        }
+        function fun10(){   
+            document.getElementById("but10").style.color="black";
+        document.getElementById("but10").style.backgroundColor="rgba(71, 69, 197, 0.596)";
+        document.getElementById("but2").style.color="white";
+        document.getElementById("but2").style.backgroundColor="blueviolet";
+        document.getElementById("but3").style.color="white";
+        document.getElementById("but3").style.backgroundColor="blueviolet";
+        document.getElementById("but4").style.color="white";
+        document.getElementById("but4").style.backgroundColor="blueviolet";
+        document.getElementById("but5").style.color="white";
+        document.getElementById("but5").style.backgroundColor="blueviolet";
+        document.getElementById("but6").style.color="white";
+        document.getElementById("but6").style.backgroundColor="blueviolet";
+        document.getElementById("but7").style.color="white";
+        document.getElementById("but7").style.backgroundColor="blueviolet";
+        document.getElementById("but8").style.color="white";
+        document.getElementById("but8").style.backgroundColor="blueviolet";
+        document.getElementById("but9").style.color="white";
+        document.getElementById("but9").style.backgroundColor="blueviolet";
+        document.getElementById("but1").style.color="white";
+        document.getElementById("but1").style.backgroundColor="blueviolet";   
+           document.getElementById("columnchart_values").style.visibility="hidden";
+           document.getElementById("chart_div1").style.visibility="hidden";
+           document.getElementById("barchart_values").style.visibility="hidden";
+           document.getElementById("chart_div3").style.visibility="hidden";
+           document.getElementById("donutchart").style.visibility="hidden";
+           document.getElementById("regions_div").style.visibility="hidden";
+           document.getElementById("curve_chart").style.visibility="hidden";
+           document.getElementById("piechart").style.visibility="hidden";
+           document.getElementById("chart_div5").style.visibility="hidden";
+           document.getElementById("wordtree_basic").style.visibility="visible";
+        }
+
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Java', 'Javascript','python','php'],
+          ['2010',  29.66,    20.45 ,9.96, 17.38 ],
+          ['2015',  26.73,    22.22,14.5,10.48],
+          ['2019',  22.39,     23.18,24.27,7.19]
+           
+        ]);
+
+        var options = {
+          title: '%Use of programming language over the years  ',
+          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div1'));
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+        google.charts.load("current", {packages:['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ["Language", "% Users", { role: "style" } ],
+            ["Python", 13.58, "color: blue"],
+            ["C", 12.44, "color: cyan"],
+            ["Java", 10.66, "color: magenta"],
+            ["C++", 8.29, "color: red"],
+            ["C#", 5.68, "color: yellow"],
+            ["Basic Visual", 4.74, "color: aqua"],
+            ["Javascript", 2.09, "color: yellow"],
+            ["PHP", 1.4, "color: aqua"]
+          ]);
+    
+          var view = new google.visualization.DataView(data);
+          view.setColumns([0, 1,
+                           { calc: "stringify",
+                             sourceColumn: 1,
+                             type: "string",
+                             role: "annotation" },
+                           2]);
+    
+          var options = {
+            title: "% users of different programming languages",
+            width: 600,
+            height: 400,
+            bar: {groupWidth: "95%"},
+            legend: { position: "none" },
+          };
+          var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+          chart.draw(view, options);
+      }
+      </script>
+      <script type="text/javascript">
+        
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+        ["Game", "% Users", { role: "style" } ],
+        ["Words with friends", 10.4, "color: blue"],
+        ["Temple Run", 9.9, "color: cyan"],
+        ["Touch Hockey", 8.6, "color: yellow"],
+        ["Flow", 6, "color: magenta"],
+        ["Angry Bird", 5.2, "color: aqua"],
+        ["Subway Surfers", 4.5, "color: red"],
+        ["Fun Run", 4.1, "color: yellow"],
+        ["Bike Race", 3.9, "color: aqua"]
+          ]);
+    
+          var view = new google.visualization.DataView(data);
+          view.setColumns([0, 1,
+                           { calc: "stringify",
+                             sourceColumn: 1,
+                             type: "string",
+                             role: "annotation" },
+                           2]);
+    
+          var options = {
+            title: "% Users for different Games",
+            width: 600,
+            height: 400,
+            bar: {groupWidth: "95%"},
+            legend: { position: "none" },
+          };
+          var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+          chart.draw(view, options);
+      }
+      </script>
+      <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Java', 20.45, 22.22, 23.18, 21],
+          ['Javascript', 29.66, 26.73, 22.39, 20],
+          ['C++', 11.46, 8.40, 6.62, 6.1],
+          ['Python', 9.96, 14.50, 24.27, 23.2],
+          ['PHP', 17.38, 10.68, 7.19, 6.98] 
+          // Treat first row as data as well.
+        ], true);
+
+        var options = {
+          legend:'none'
+        };
+
+        var chart = new google.visualization.CandlestickChart(document.getElementById('chart_div3'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Game', 'Number of users'],
+          ['Action',     21.9],
+          ['Shooter',      25.9],
+          ['Sport',11.6],
+          ['Role playing',  11.3],
+          ['Adventure', 9.1],
+          ['fighting',    6],
+          ['Racing',6.4]
+        ]);
+
+        var options = {
+          title: '% number of users of different Games',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Market (Earning) from Game'],
+          ['Germany', 46.1],
+          ['Japan', 75.6],
+          ['Korea', 33],
+          ['United Kingdom', 37.7],
+          ['France', 38.1],
+          ['Canada', 21],
+          ['Italy',36.5],
+          ['Spain',29.7],
+          ['India',38]
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Year');
+      data.addColumn('number', 'Java');
+      data.addColumn('number', 'Javascript');
+      data.addColumn('number', 'python');
+
+      data.addRows([
+        
+        [10,  29.66,20.45 ,9.96],
+          [15,  26.73,22.22,14.5],
+          [19,  22.39,23.18,24.27] 
+      ]);
+
+      var options = {
+        chart: {
+          title: '% of users using java javascript and python Over the years',
+          subtitle: 'in 2010,2015 and 2019'
+        },
+        width: 900,
+        height: 500
+      };
+
+      var chart = new google.charts.Line(document.getElementById('curve_chart'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Framework', 'Number of users'],
+          ['Ruby',     14352],
+          ['ExpressJs',      6254],
+          ['.NET Core',5862],
+          ['Flask',  4685],
+          ['Laravel', 3347],
+          ['Symfony',    4598],
+          ['Spring',3828]
+        ]);
+
+        var options = {
+          title: 'popular Backend framework for web development users'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Market', 'Gamers'],
+          [ 22.1,      75.6],
+          [ 7.55,      33],
+          [ 5.87,     46.1],
+          [ 5.3,      37.7],
+          [ 4.13,      38.1],
+          [ 3.69,    21]
+        ]);
+
+        var options = {
+          title: 'Market Vs Number of Gamers analysis Over the countries',
+          hAxis: {title: 'Age', minValue: 0, maxValue: 15},
+          vAxis: {title: 'Weight', minValue: 0, maxValue: 15},
+          legend: 'none'
+        };
+
+        var chart = new google.visualization.ScatterChart(document.getElementById('chart_div5'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {packages:['wordtree']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(
+          [ ['Phrases'],
+            ['Computer languages Web Programming Language Frontend HTML'],
+            ['Computer languages Web Programming Language Frontend styling CSS'],
+            ['Computer languages Web Programming Language Frontend styling Bootsrap'],
+            ['Computer languages Web Programming Language Frontend styling Skeleton'],
+            ['Computer languages Web Programming Language Frontend styling Bulma'],
+            ['Computer languages Web Programming Language Frontend styling Foundation'],
+            ['Computer languages Web Programming Language Backend nodejs'],
+            ['Computer languages Web Programming Language Backend PHP'],
+            ['Computer languages Web Programming Language Backend Python'],
+            ['Computer languages Web Programming Language Backend Java'],
+            ['Computer languages Web Programming Language Backend Ruby'],
+            ['Computer languages Programming C'],
+            ['Computer languages Programming C++'],
+            ['Computer languages Programming Core Java'],
+            ['Computer languages Programming Python'],
+            ['Computer languages Android Development Java'],
+            ['Computer languages Android Development Kotlin'],
+            ['Computer languages Android Development Swift'],
+            ['Computer languages Android Development Objective C'],
+            ['Computer languages Android Development React Native']
+          ]
+        );
+
+        var options = {
+          wordtree: {
+            format: 'implicit',
+            word: 'Computer'
+          }
+        };
+
+        var chart = new google.visualization.WordTree(document.getElementById('wordtree_basic'));
+        chart.draw(data, options);
+      }
+    </script>
+    <body>
+        <button id="but1" onclick="fun1()">analysis of % users of different languages</button>
+        <button id="but2" onclick="fun2()">analysis of usage of programming language over the years</button>
+        <button id="but3" onclick="fun3()">usage for different games</button>
+        <button id="but4" onclick="fun4()">Use and Variation in % number of users of programming Languages</button>
+        <button id="but5" onclick="fun5()">analysis of % number of users for different games</button>
+        <button id="but6" onclick="fun6()">Market (Earning) from Game for Different Countries</button>
+        <button id="but7" onclick="fun7()">analysis of usage of web frameworks</button>
+        <button id="but8" onclick="fun8()">analysis of usage of backend framework</button>
+        <button id="but9" onclick="fun9()">analysis of market vs number of gamers over the countries</button>
+        <button id="but10" onclick="fun10()">Types of computer languages</button>
+       
+        <div id="columnchart_values" style="width: 900px; height: 300px;"></div>
+        <div id="chart_div1" style="width: 900px; height: 500px;"></div>
+        <div id="barchart_values" style="width: 900px; height: 300px;"></div>
+        <div id="chart_div3" style="width: 900px; height: 500px;"></div>
+        <div id="donutchart" style="width: 900px; height: 500px;"></div>
+        <div id="regions_div" style="width: 900px; height: 500px;"></div>
+        <div id="curve_chart" style="width: 900px; height: 500px"></div>
+        <div id="piechart" style="width: 900px; height: 500px;"></div>
+        <div id="chart_div5" style="width: 900px; height: 500px;"></div>
+        <div id="wordtree_basic" style=" width: 1900px; height: 500px;"></div>
+
+    </body>
+</html>
